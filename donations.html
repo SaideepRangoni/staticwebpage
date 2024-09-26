@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('static/images/top-view-food-donation-box_23-2148733850.avif') no-repeat center center fixed;
+            background: url('top-view-food-donation-box_23-2148733850.avif') no-repeat center center fixed;
             background-size: cover; /* Makes the background image cover the entire area */
         } /* Added missing brace here */
         .container {
@@ -94,8 +94,9 @@
                 <p><strong>City:</strong> {{ post.city }}</p>
                 <p><strong>Serves:</strong> {{ post.people_served }} people</p>
                 <p><strong>Notes:</strong> {{ post.additional_notes }}</p>
-                <form method="POST" action="{{ url_for('delete_post', post_id=post.id) }}">
-                    <button type="submit" class="delete-btn">Remove Post</button>
+                <form method="POST" action="#">
+                    <a href="landingpage_beneficiary.html" class="delete-btn">Remove Post</a>
+
                 </form>
             </div>
             {% else %}
@@ -103,7 +104,7 @@
             {% endfor %}
         </div>
         
-        <a href="{{ url_for('landingpage_user') }}" class="back-btn">Go Back</a>
+        <a href="landingpage_user.html" class="back-btn">Go Back</a>
     </div>
 </body>
 </html>
