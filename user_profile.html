@@ -12,7 +12,7 @@
             margin: 0;
         }
         .bg {
-            background-image: linear-gradient(to right,rgba(206, 180, 122, 0.612), rgba(222, 141, 36, 0.324)), url('/static/images/landingpage_user.png');
+            background-image: linear-gradient(to right,rgba(206, 180, 122, 0.612), rgba(222, 141, 36, 0.324)), url('landingpage_user.png');
             height: 100vh;
             background-position: center;
             background-repeat: no-repeat;
@@ -45,20 +45,20 @@
 <body>
     <div class="bg">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="/landingpage_user">Food Donation Dashboard</a>
+            <a class="navbar-brand" href="landingpage_user.html">Food Donation Dashboard</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/landingpage_user">Home</a> <!-- Home Link -->
+                        <a class="nav-link" href="landingpage_user.html">Home</a> <!-- Home Link -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/donations">My Donations</a>
+                        <a class="nav-link" href="donations.html">My Donations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Logout</a>
+                        <a class="nav-link" href="index.html">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
                 <p><strong>City:</strong> {{ user.city }}</p>
 
                 <h2>Update Password</h2>
-                <form method="POST" action="{{ url_for('update_password') }}">
+                <form method="POST" action="#">
                     <div class="form-group">
                         <input type="password" class="form-control" name="current_password" placeholder="Current Password" required>
                     </div>
