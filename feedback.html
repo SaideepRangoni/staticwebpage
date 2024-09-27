@@ -119,7 +119,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="text-center">What is your opinion of this page?</h5>
-                        <form action="/submit-feedback" method="POST">
+                        <form action="#" method="POST">
                             <!-- Name Input -->
                             <div class="form-group">
                                 <label for="name">Your Name:</label>
@@ -133,19 +133,19 @@
                                 </label>
                                 <label>
                                     <input type="radio" name="rating" value="2" />
-                                    <img src="{{ url_for('static', filename='images/sad_img.jpeg') }}" class="emoji neutral-sad" alt="Sad Emoji" />
+                                    <img src="sad_img.jpeg" class="emoji neutral-sad" alt="Sad Emoji" />
                                 </label>
                                 <label>
                                     <input type="radio" name="rating" value="3" />
-                                    <img src="{{ url_for('static', filename='images/neutral_img.jpeg') }}" class="emoji neutral" alt="Neutral Emoji" />
+                                    <img src="neutral_img.jpeg" class="emoji neutral" alt="Neutral Emoji" />
                                 </label>
                                 <label>
                                     <input type="radio" name="rating" value="4" />
-                                    <img src="{{ url_for('static', filename='images/happy_img.jpeg') }}" class="emoji happy" alt="Happy Emoji" />
+                                    <img src="happy_img.jpeg class="emoji happy" alt="Happy Emoji" />
                                 </label>
                                 <label>
                                     <input type="radio" name="rating" value="5" />
-                                    <img src="{{ url_for('static', filename='images/very_happy_img.jpeg') }}" class="emoji very-happy" alt="Very Happy Emoji" />
+                                    <img src="very_happy_img.jpeg" class="emoji very-happy" alt="Very Happy Emoji" />
                                 </label>
                             </div>
                         
@@ -170,7 +170,8 @@
                             <!-- Hidden input to send user_id -->
                             <input type="hidden" name="user_id" value="{{ session['user_id'] }}">
                         
-                            <button type="submit" class="btn btn-primary btn-block">Send Feedback</button>
+                            <button class="btn btn-primary btn-block" onclick="window.location.href='feedback.html'">Send Feedback</button>
+
                         </form>
                         
                     </div>
@@ -179,7 +180,7 @@
         </div>
     </div>
     <div class="text-center mt-4">
-        <a href="{{ url_for('home') }}" class="btn btn-secondary" style="background-color: #18dc66;">Go to Home</a>
+        <a href="index.html" class="btn btn-secondary" style="background-color: #18dc66;">Go to Home</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
