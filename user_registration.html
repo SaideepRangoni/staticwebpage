@@ -170,7 +170,7 @@
         <h2>Create Your Account</h2>
         <p>Join our community and start your journey</p>
       </div>
-      <form method="POST" action="/user_registration">
+      <form method="POST" action="#">
         <div class="form-group">
           <i class="fas fa-user"></i>
           <input type="text" id="username" name="username" class="form-control" placeholder="Restaurant/User Name" required>
@@ -195,10 +195,11 @@
           <i class="fas fa-city"></i>
           <input type="text" id="cityField" name="cityField" class="form-control" placeholder="City" required>
         </div>
-        <button type="submit" class="btn">Create Account</button>
+        <button type="button" class="btn" onclick="window.location.href='user_login.html'">Create Account</button>
+
       </form>
       <div class="login-link">
-        Already have an account? <a style="font-size: 15px" href="/user_login">Log In</a>
+        Already have an account? <a style="font-size: 15px" href="user_login.html">Log In</a>
       </div>
     </div>
     <div class="image-container">
