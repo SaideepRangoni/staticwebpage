@@ -14,13 +14,13 @@
             height: 100%;
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-image: url('static/images/beneficiary_landing.webp');
+            background-image: url('beneficiary_landing.webp');
             background-position: center; /* Center the background image */
             background-repeat: no-repeat; /* Prevent the image from repeating */
             background-size: cover; 
         }
         .bg {
-            background-image: linear-gradient(to right, rgba(206, 180, 122, 0.612), rgba(222, 141, 36, 0.324)), url('/static/images/LANDINGPAGEIMAGE.jpg');
+            background-image: linear-gradient(to right, rgba(206, 180, 122, 0.612), rgba(222, 141, 36, 0.324)), url('LANDINGPAGEIMAGE.jpg');
             height: 100vh;
             background-position: center;
             background-repeat: no-repeat;
@@ -99,13 +99,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/landingpage_beneficiary">Home</a>
+                        <a class="nav-link" href="landingpage_beneficiary.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/search_for_food">Search for Food</a>
+                        <a class="nav-link" href="searchforfood.html">Search for Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Logout</a>
+                        <a class="nav-link" href="index.html">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -228,7 +228,7 @@
         .then(data => {
             if (data.success) {
                 alert("Food reserved successfully! A confirmation email has been sent to the donor.");
-                window.location.href = "/search_for_food";
+                window.location.href = "searchforfood.html";
             } else {
                 alert("Failed to reserve food. Please try again.");
             }
